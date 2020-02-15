@@ -1,4 +1,5 @@
 #pragma once
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 namespace mike {	namespace graphics {
@@ -10,7 +11,7 @@ namespace mike {	namespace graphics {
 		const char* title;
 		GLFWwindow* window;
 		bool closed;
-		
+		  
 		bool  init();
 		
 	public:

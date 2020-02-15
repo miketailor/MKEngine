@@ -39,6 +39,17 @@ namespace mike { namespace graphics {
 		glfwMakeContextCurrent(window);
 		glfwSetWindowSizeCallback(window,window_resize_callback);
 
+		std::cout <<"OpenGL: " << glGetString(GL_VERSION) << std::endl;
+
+		if (glewInit() != GLEW_OK)
+		{
+			std::cout << "Could not initialize GLEW!" << std::endl;
+			return false;
+
+		}
+
+
+
 		return true;
 	}
 
