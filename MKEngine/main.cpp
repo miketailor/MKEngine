@@ -17,7 +17,9 @@ int main()
 	{
 		
 		window.clear();
-
+	
+		
+			std::cout<<window.getMouseX() << "x" <<window.getMouseY()<< std::endl; 
 #if 1
 		glBegin(GL_TRIANGLES);
 		glVertex2f(-0.5f, -0.5f);
