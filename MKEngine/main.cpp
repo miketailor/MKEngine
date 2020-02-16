@@ -10,8 +10,7 @@ int main()
 	GLuint vao;
 	glGenVertexArrays(1, &vao);
 	glBindVertexArray(vao);
-
-
+	
 	
 	while (!window.isClosed())
 	{
